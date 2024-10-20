@@ -13,15 +13,16 @@ html {
 по центру*/
 
 .page {
-  display: flex;
+  isplay: flex;
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
-  margin-left: 205px;
+  margin: auto;
   color: #fff;
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  padding-left: 30px;
 }
 
 h1,
@@ -60,12 +61,8 @@ ol {
 
 .content__list {
   position: relative;
-  overflow-y: scroll;
+  overflow-y: auto;
   block-size: 300px;
-}
-
-.content__list::-webkit-scrollbar {
-  display: none;
 }
 
 .content__details {
@@ -173,6 +170,10 @@ video {
   line-height: 1;
   text-transform: uppercase;
   hyphens: auto;
+  text-overflow: ellipsis; 
+  white-space: nowrap; 
+  overflow: hidden;
+  max-width: 200px;
 }
 
 .content__video-card-description {
@@ -230,7 +231,7 @@ label {
 }
 
 .button {
-  border: 1px solid #FFF;
+  border: 1px solid currentColor;
   padding: 6px 0;
   color: #FFF;
   font-family: 'Fira Sans Condensed', sans-serif;
@@ -265,7 +266,7 @@ label {
 
 /*шестой шаг*/
 
-.search-form__label:hover {
+.search-form__label:hover .search-form__label-text {
   text-decoration: underline 1px #FFF;
   text-underline-offset: 5px;
 }
