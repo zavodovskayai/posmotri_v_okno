@@ -13,7 +13,7 @@ html {
 по центру*/
 
 .page {
-  isplay: flex;
+  display: flex;
   align-items: center;
   inline-size: 1200px;
   block-size: 100%;
